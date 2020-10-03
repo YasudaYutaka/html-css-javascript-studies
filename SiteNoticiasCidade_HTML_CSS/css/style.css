@@ -13,7 +13,7 @@ body {
 }
 
 #container {
-    width: 700px;
+    width: 750px;
     margin: 0 auto; 
 }
 
@@ -78,4 +78,80 @@ body.fotos #navegacao a#fotos {
     color: #FFF;
     background: #DE003E;
     cursor: text;
+}
+
+/*
+Configura layout de três colunas
+*/
+
+#conteudo {
+    background: #F5F5F5;
+    margin-top: 60px;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+#primario {
+    width: 270px;
+    float: left;
+    background: blue;
+    margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario {
+    width: 555px;
+}
+
+#uma-coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    background: green;
+    margin: 0 0 20px 15px;
+}
+
+/*
+Caixa  
+*/
+
+.caixa {
+    background: #F3F3F3 url(../images/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 1em;
+    background: #294C71;
+    color: #FFF;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #FFF;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*
+Rodapé
+*/
+
+#container-rodape {
+    background: #294C71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #FFF;
 }
