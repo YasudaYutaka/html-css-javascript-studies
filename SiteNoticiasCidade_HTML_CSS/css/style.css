@@ -142,6 +142,49 @@ h2 {
 }
 
 /*
+Menus Laterais
+*/
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+#lateral ul a:hover {
+    padding-left: 20px;
+    background: #F9F9F9 url(../images/marcador.png) no-repeat left center;
+    color: #A1A1A1;
+}
+
+/*
+Formulários
+*/
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    width: 125px;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #FFF;
+}
+
+input.submit {
+    width: 80px;
+    color: #FFF;
+    background-color: #B10333;
+    border: 2px solid #870529;
+}
+
+/*
 Rodapé
 */
 
