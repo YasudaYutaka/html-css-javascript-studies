@@ -34,6 +34,15 @@ body {
 Barra Navegação
 */
 
+a:link, a:visited {
+    color: #B10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #E50040;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -238,6 +247,7 @@ Lista de notícias
 
 #lista-noticias li a p {
     font-size: 0.7em;
+    color: #000;
 }
 
 #lista-noticias li a:hover {
