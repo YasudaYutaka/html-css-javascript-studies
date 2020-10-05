@@ -213,6 +213,39 @@ h3 {
 }
 
 /*
+Lista de notícias
+*/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #CCC;
+    height: 62px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3E7AB9;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em;
+}
+
+#lista-noticias li a:hover {
+    background: #EEE;
+    cursor: pointer;
+}
+
+/*
 Rodapé
 */
 
