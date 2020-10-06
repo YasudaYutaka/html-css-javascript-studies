@@ -57,3 +57,70 @@ body {
     width: 450px;
     height: 250px;
 }
+
+#conteudo-menu {
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais {
+    border-bottom: 1px solid #B5AB56;
+    border-top: 1px solid #B5AB56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8B8448;
+}
+
+#menu-locais .locais {
+    float: left;
+    line-height: 2.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.reserva {
+    float: right;
+    text-transform: uppercase;
+    background: #A29750;
+    color: #FFF5B0;
+    padding: 5px 10px;
+}
+
+/*
+Barra Navegação Vertical
+*/
+
+#menu {
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#navegacao {
+    float: left;
+}
+
+ul#navegacao a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6E672C;
+    line-height: 30px;
+}
+
+ul#navegacao a:hover {
+    background: #FDF6BE;
+}
+
+#depoimento {
+    width: 226px;
+    height: 264px;
+    float: right;
+}
+
