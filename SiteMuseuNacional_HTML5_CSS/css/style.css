@@ -74,7 +74,7 @@ Principal
 #conteudo {
     width: 710px;
     float: left;
-    background: green;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -82,6 +82,7 @@ aside {
     float: right;
     padding-bottom: 30px;
     background: #EBE7DD;
+    margin-bottom: 20px;
 }
 
 section#visita {
@@ -107,11 +108,58 @@ section#galeria img {
     margin-top: 3px;
 }
 
+article#video {
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+}
+
+article#mapa {
+    float: left;
+    width: 310px;
+    margin-left: 37px;
+}
+
+article#exposicoes {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+}
+
+article#historia {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 37px;
+}
+
 h4 {
     color: #86521A;
     text-transform: uppercase;
     padding-bottom: 3px;
     margin-bottom: 0;
+}
+
+h3 {
+    color: #227115;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/*
+Rodapé
+*/
+
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(../images/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+
+footer>p a {
+    padding: 2px 10px;
 }
 
 /*
