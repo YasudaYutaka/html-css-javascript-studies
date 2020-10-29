@@ -4,6 +4,7 @@ Layout
 
 html, body, #home {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -83,21 +84,41 @@ Capa
 Estrutura de conteúdos
 */
 
-#servicos {
-	background: white;
+.caixa-servicos {
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+#servicos {
+	background: white;
 }
 
 #servicos h2, h3 {
 	color: #7C25F8;
 }
 
+#recursos {
+	color: white;
+}
+
 .albuns {
 	padding: 10px 0px;
 }
 
+#recursos h2 {
+	color: white;
+}
 
+#recursos h3 {
+	color: #9BF0E1;
+}
+
+.rotacionar-images {
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
 
 /*
 Tipografia
