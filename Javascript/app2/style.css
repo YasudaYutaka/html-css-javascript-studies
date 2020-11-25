@@ -1,3 +1,4 @@
+/*TAMANHO MOSQUITO*/
 .mosquito1 {
 	width: 50px;
 	height: 50px;
@@ -11,4 +12,13 @@
 .mosquito3 {
 	width: 90px;
 	height: 90px;
+}
+
+/*LADO MOSQUITO*/
+.ladoA {
+	transform: scaleX(1);
+}
+
+.ladoB {
+	transform: scaleX(-1);
 }

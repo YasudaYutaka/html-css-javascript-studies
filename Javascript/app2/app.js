@@ -28,7 +28,7 @@ function randomPosition() {
 	// criar elemento HTML
 	var mosquito = document.createElement('img');
 	mosquito.src = 'imagens/mosca.png';
-	mosquito.className = randomSize();
+	mosquito.className = randomSize() + ' ' +randomSide();
 	mosquito.style.left = posicaoX + 'px';
 	mosquito.style.top = posicaoY + 'px';
 	mosquito.style.position = 'absolute';
@@ -39,9 +39,9 @@ function randomPosition() {
 
 function randomSize() {
 
-	var classeMosquito = Math.floor(Math.random() * 3);
+	var classeTamanhoMosquito = Math.floor(Math.random() * 3);
 
-	switch(classeMosquito) {
+	switch(classeTamanhoMosquito) {
 		case 0:
 			return 'mosquito1'
 
@@ -50,6 +50,20 @@ function randomSize() {
 
 		case 2:
 			return 'mosquito3'
+	}
+
+}
+
+function randomSide() {
+
+	var classeLadoMosquito = Math.floor(Math.random() * 2);
+
+	switch(classeLadoMosquito) {
+		case 0:
+			return 'ladoA'
+
+		case 1:
+			return 'ladoB'
 	}
 
 }
