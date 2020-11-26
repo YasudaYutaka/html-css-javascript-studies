@@ -1,3 +1,30 @@
+/*CENÁRIO*/
+body {
+	background-image: url(imagens/bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.painel {
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	left: 0px;
+	bottom: 10px;
+	border-top: 1px solid #FFF;
+	background-color: #FFF;
+	opacity: 0.7;
+}
+
+.vidas {
+	float: left;
+}
+
+.cronometro {
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
 /*TAMANHO MOSQUITO*/
 .mosquito1 {
 	width: 50px;
