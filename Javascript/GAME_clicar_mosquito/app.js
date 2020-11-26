@@ -3,6 +3,22 @@ var largura = 0;
 var vidas = 1;
 var tempo = 5;
 
+var mosquitoGenerationTime = 1500;
+
+var difficulty = window.location.search;
+difficulty = difficulty.replace('?', '');
+
+if (difficulty === 'normal') {
+	//1,5s
+	mosquitoGenerationTime = 1500;
+} else if(difficulty === 'hard') {
+	//1s
+	mosquitoGenerationTime = 1000;
+} else if(difficulty === 'hardcore') {
+	// 0,75s
+	mosquitoGenerationTime = 750;
+}
+
 function ajustaTamanhoPalcoJogo() {
 
 	altura = window.innerHeight;
