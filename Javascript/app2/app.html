@@ -12,7 +12,9 @@
 	<body onresize="ajustaTamanhoPalcoJogo()">
 
 		<script>
-			randomPosition();
+			setInterval(function() {
+				randomPosition();
+			}, 1000);
 		</script>
 
 	</body>
