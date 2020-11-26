@@ -14,12 +14,12 @@ ajustaTamanhoPalcoJogo();
 
 function randomPosition() {
 
-	// remover o mosquito anterior (se existir)
+	// remover o mosquito anterior (se existir) & controle de vida
 	if(document.getElementById('mosquito')) {
 		document.getElementById('mosquito').remove();	
 
 		if(vidas > 3) {
-			alert('GAME OVER');
+			window.location.href = 'game_over.html';
 		} else {
 			document.getElementById('vida' + vidas).src = "imagens/coracao_vazio.png";
 			vidas++;
