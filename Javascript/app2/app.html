@@ -19,12 +19,14 @@
 			</div>
 
 			<div class="cronometro">
-				Tempo restante: ?
+				Tempo restante: <span id="cronometro"></span>
 			</div>
 		</div>
 
 		<script>
-			setInterval(function() {
+			document.getElementById('cronometro').innerHTML = tempo;
+
+			var generateMosquito = setInterval(function() {
 				randomPosition();
 			}, 1000);
 		</script>
