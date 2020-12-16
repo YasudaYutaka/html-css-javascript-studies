@@ -54,12 +54,20 @@ function cadastrarDespesa() {
 	let despesa = new Despesa(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value);
 
 	if(despesa.validarDados()) {
-		bd.gravar(despesa);	
-		//console.log('dados válidos');
-		$('#sucessoGravacao').modal('show');
+		//bd.gravar(despesa);	
+		document.getElementById('modal_titulo').innerHTML = 'Registro inserido com sucesso';
+		document.getElementById('modal_titulo_div').className = 'modal-header text-success';
+		document.getElementById('modal_descricao').innerHTML = 'Despesa foi cadastrada com sucesso!';
+		document.getElementById('modal_botao').innerHTML = 'Voltar';
+		document.getElementById('modal_botao').className = 'btn btn-success';
+		$('#modalRegistraDespesa').modal('show');
 	} else {
-		//console.log('dados inválidos');
-		$('#erroGravacao').modal('show');
+		document.getElementById('modal_titulo').innerHTML = 'Erro na gravação';
+		document.getElementById('modal_titulo_div').className = 'modal-header text-danger';
+		document.getElementById('modal_descricao').innerHTML = 'Existem campos obrigatórios que não foram preenchidos corretamente';
+		document.getElementById('modal_botao').innerHTML = 'Voltar e corrigir';
+		document.getElementById('modal_botao').className = 'btn btn-danger';
+		$('#modalRegistraDespesa').modal('show');
 	}
 
 }
