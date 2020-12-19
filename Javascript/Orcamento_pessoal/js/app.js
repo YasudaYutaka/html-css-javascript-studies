@@ -48,6 +48,7 @@ class Bd {
 			if(despesa === null) {
 				continue;
 			}
+			despesa.id = i;
 			despesas.push(despesa);
 		}
 		return despesas;
@@ -88,6 +89,10 @@ class Bd {
 
 	}
 
+	remover(id) {
+		localStorage.removeItem(id);
+	}
+
 }
 
 let bd = new Bd();
@@ -104,7 +109,7 @@ function cadastrarDespesa() {
 	let despesa = new Despesa(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value);
 
 	if(despesa.validarDados()) {
-		//bd.gravar(despesa);	
+		bd.gravar(despesa);	
 		document.getElementById('modal_titulo').innerHTML = 'Registro inserido com sucesso';
 		document.getElementById('modal_titulo_div').className = 'modal-header text-success';
 		document.getElementById('modal_descricao').innerHTML = 'Despesa foi cadastrada com sucesso!';
@@ -174,9 +179,12 @@ function carregaListaDespesa(despesas = Array(), filtro = false) {
 		let btn = document.createElement('button');
 		btn.className = 'btn btn-danger'
 		btn.innerHTML = '<i class="fas fa-times"></i>'
+		btn.id = `id_despesa_${d.id}`;
 		btn.onclick = function() { 
 			// remover despesa
-			alert('gay');
+			let id = this.id.replace('id_despesa_', '');
+			bd.remover(id);
+		    window.location.reload();
 		}
 		linha.insertCell(4).append(btn);
 
