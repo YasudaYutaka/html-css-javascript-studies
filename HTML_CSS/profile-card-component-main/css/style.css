@@ -1,0 +1,18 @@
+
+body {
+	background-color: hsl(185, 75%, 39%);
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+}
+
+#top-circle {
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+}
+
+#bottom-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
