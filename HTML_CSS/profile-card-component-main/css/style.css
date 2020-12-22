@@ -4,13 +4,8 @@ body {
 	font-size: 18px;
 }
 
-.teste {
-	align-items: center;
-	justify-content: center;
-}
-
 .card {
-	width: 100vw;
+	width: auto;
     height: 100vh;
     background-color: hsl(185, 75%, 39%);	
     align-items: center;
@@ -57,5 +52,31 @@ body {
 	transform: translateY(-50%);
 }
 
+.card-user {
+	padding: 5px;
+}
+
+.card-user-info {
+	text-align: center;
+}
+
+.card-sns-info {
+	padding-top: 15px;
+	border-top: 1px solid #969696;
+	text-align: center;
+}
+
+/* tipografia */
+
+p {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.text-gray {
+	color: hsl(0, 0%, 59%);
+	font-weight: 300;
+	font-size: 14px;
+}
 
 
