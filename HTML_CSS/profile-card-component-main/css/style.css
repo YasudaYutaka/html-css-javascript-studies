@@ -1,18 +1,61 @@
-
 body {
 	background-color: hsl(185, 75%, 39%);
 	font-family: 'Kumbh Sans', sans-serif;
 	font-size: 18px;
 }
 
+.teste {
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);	
+    align-items: center;
+    justify-content: center;
+}
+
 #top-circle {
-	position: absolute;
+	position: fixed;
 	bottom: 50%;
 	right: 50%;
 }
 
 #bottom-circle {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 }
+
+/* card */
+
+.card-profile {
+	width: 354px;
+	align-items: center;
+	z-index: 10;
+	position: relative;
+	border-radius: 14px;
+	background: #FFF;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card-header1 {
+	display: block;
+	align-self: center;
+}
+
+.card-profile-picture {
+	display: block;
+	width: 96px;
+	border-radius: 50%;
+	border: 4px solid #FFF;
+	margin-left: auto; 
+	margin-right: auto;
+	transform: translateY(-50%);
+}
+
+
+

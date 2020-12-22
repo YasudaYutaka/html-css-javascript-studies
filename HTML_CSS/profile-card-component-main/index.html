@@ -7,6 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="icon" href="images/favicon-32x32.png">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- bootsrap -->
@@ -24,12 +25,42 @@
 
 <body>
 
-  <div class="container">
-    <img class="img-fluid" id="top-circle" src="images/bg-pattern-top.svg" alt="top circle">
-      <div class="profile-card">
-        
+  <div class="card">
+    <img src="images/bg-pattern-top.svg" class="img-fluid" id="top-circle" alt="circle">
+
+    <div class="container teste">
+  
+      <div class="card-profile">
+
+        <div class="card-header1">
+          <img src="images/bg-pattern-card.svg" class="img-fluid card-img-top">
+          <img src="images/image-victor.jpg" class="img-fluid card-profile-picture">
+        </div>
+      
+        <div class="row card-user-info">
+          <p>Victor Crest <span class="user-age">26</span></p>
+          <p>London</p>
+        </div>
+
+        <div class="row card-sns-info"> 
+          <div class="col-md-4">
+            <p class="sns-number">80K</p>
+            <p class="sns-category">Followers</p>
+          </div>
+          <div class="col-md-4">
+            <p class="sns-number">803K</p>
+            <p class="sns-category">Likes</p>
+          </div>
+          <div class="col-md-4">
+            <p class="sns-number">1.4K</p>
+            <p class="sns-category">Photos</p>
+          </div>
+        </div>
+
       </div>
-    <img class="img-fluid" id="bottom-circle" src="images/bg-pattern-bottom.svg" alt="bottom circle">
+      
+    </div>
+    <img src="images/bg-pattern-bottom.svg" class="img-fluid" id="bottom-circle" alt="circle">
   </div>
   
   <div class="attribution">
