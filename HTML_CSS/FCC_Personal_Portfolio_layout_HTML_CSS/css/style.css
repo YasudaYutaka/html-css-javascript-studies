@@ -1,0 +1,15 @@
+:root {
+	--main-white: #F0F0F0;
+    --main-red: #BE3144;
+    --main-blue: #45567D;
+    --main-gray: #303841;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
