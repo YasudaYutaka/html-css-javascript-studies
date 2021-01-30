@@ -104,7 +104,7 @@ CONTACT SECTION
 */
 
 #contact-section {
-	height: 80vh;
+	height: 83vh;
 	background: var(--main-gray);
 	display: flex;
 	justify-content: center;
@@ -134,3 +134,12 @@ CONTACT SECTION
 /*
 FOOTER
 */
+
+footer {
+	height: 10vh;
+	background: var(--main-gray);
+	border-top: 4px solid var(--main-red);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
