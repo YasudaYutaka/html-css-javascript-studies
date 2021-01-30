@@ -12,4 +12,47 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
+	color: var(--main-white);
+	font-size: 18px;
 }
+
+a {
+	color: var(--main-white);
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*
+NAVIGATION
+*/
+
+#nav-header {
+	background: var(--main-red);
+	width: 100%;
+	height: 7vh;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#nav-header ul {
+	display: flex;
+	margin-right: 2rem;
+}
+
+#nav-header li {
+	font-size: 1.3rem;
+}
+
+#nav-header li:hover {
+	background: var(--main-blue);
+}
+
+#nav-header a {
+	padding: 20px;
+}
+
