@@ -14,6 +14,20 @@ body {
 	font-family: 'Poppins', sans-serif;
 	color: var(--main-white);
 	font-size: 18px;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 
 a {
@@ -56,3 +70,67 @@ NAVIGATION
 	padding: 20px;
 }
 
+/*
+WELCOME SECTION
+*/
+
+#welcome-section {
+	height: 100vh;
+	background: #000;
+	background-image: linear-gradient(62deg, #3a3d40, #181719);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#welcome-section p {
+	color: var(--main-red);
+	font-style: italic;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+/*
+PROJECTS SECTION
+*/
+
+#projects-section {
+	background: var(--main-blue);
+}
+
+/*
+CONTACT SECTION
+*/
+
+#contact-section {
+	height: 80vh;
+	background: var(--main-gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+#contact-section p {
+	font-style: italic;
+	margin-top: 5px;
+}
+
+#contact-links {
+	margin-top: 40px;	
+	font-size: 1.6rem;
+}
+
+#contact-links a {
+	margin-right: 10px;
+}
+
+#contact-links i {
+	margin-right: 4px;
+}
+
+/*
+FOOTER
+*/
