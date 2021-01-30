@@ -131,6 +131,10 @@ CONTACT SECTION
 	margin-right: 4px;
 }
 
+.sns:hover {
+	color: var(--main-red);
+}
+
 /*
 FOOTER
 */
@@ -143,3 +147,4 @@ footer {
 	align-items: center;
 	justify-content: space-around;
 }
+
