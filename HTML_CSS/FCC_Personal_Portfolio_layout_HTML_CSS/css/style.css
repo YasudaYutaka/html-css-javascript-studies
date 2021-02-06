@@ -10,19 +10,22 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%; /*1 rem == 10px*/
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
-	color: var(--main-white);
-	font-size: 18px;
+	color: var(--main-white);	
 	font-weight: 400;
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 6rem;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 5rem;
 }
 
 h1, h2 {
@@ -37,6 +40,10 @@ a {
 
 li {
 	list-style: none;
+}
+
+p {
+	font-size: 2.2rem;
 }
 
 /*
@@ -59,7 +66,7 @@ NAVIGATION
 }
 
 #nav-header li {
-	font-size: 1.3rem;
+	font-size: 2.2rem;
 }
 
 #nav-header li:hover {
@@ -67,20 +74,10 @@ NAVIGATION
 }
 
 #nav-header a {
-	padding: 20px;
+	padding: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-	#nav-header {
-		justify-content: center;
-	}
-}
 
-@media only screen and (min-width: 1200px) {
-	#nav-header {
-		justify-content: flex-end;
-	}
-}
 
 /*
 WELCOME SECTION
@@ -99,7 +96,7 @@ WELCOME SECTION
 #welcome-section p {
 	color: var(--main-red);
 	font-style: italic;
-	font-size: 2rem;
+	font-size: 3.5rem;
 	font-weight: 200;
 }
 
@@ -120,7 +117,7 @@ PROJECTS SECTION
 }
 
 #projects-section h2 {
-	font-size: 2.4rem;
+	font-size: 3.6rem;
 	max-width: 620px;
 	margin: 0 auto 3.8rem auto;
 	border-bottom: 2px solid var(--main-white);
@@ -166,7 +163,7 @@ CONTACT SECTION
 
 #contact-links {
 	margin-top: 40px;	
-	font-size: 1.6rem;
+	font-size: 2.4rem;
 }
 
 #contact-links a {
@@ -194,3 +191,51 @@ footer {
 	justify-content: space-around;
 }
 
+/*
+MEDIA
+*/
+
+
+@media (min-width: 1200px) {
+	#nav-header {
+		justify-content: flex-end;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 50%;
+	}
+	#nav-header {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 580px) {
+	#contact-links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contact-links a {
+		margin: 5px;
+	}
+}
+
+
+@media (max-width: 385px) {
+	footer {
+		display: block;
+	}
+
+	footer p {
+		font-size: 1.6rem;
+		margin-top: 1.2rem;
+	}
+}
+
+@media (max-width: 355px) {
+	html {
+		font-size: 40%;
+	}
+}
